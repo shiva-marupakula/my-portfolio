@@ -1,0 +1,13 @@
+Configuring the hostname for your instance
+In this article
+About the hostname for GitHub Enterprise Server
+Configuring the hostname
+Changing the hostname
+You can provide reliable access to your GitHub Enterprise Server instance by assigning a hostname that's accessible over your network.
+
+About the hostname for GitHub Enterprise Server
+To provide reliable access to your GitHub Enterprise Server instance via a known name on the network, you can configure a hostname. If you configure a hostname instead of using a hard-coded IP address, you will be able to change the physical hardware that your GitHub Enterprise Server instance runs on without affecting users or client software.
+
+The hostname setting in the Management Console should be set to an appropriate fully qualified domain name (FQDN) which is resolvable on the internet or within your internal network. For example, your hostname setting could be github.companyname.com. Web and API requests will automatically redirect to the hostname configured in the Management Console. Note that localhost is not a valid hostname setting.
+
+Hostnames must be less than 63 characters in length per Section 2.3.4 of the Domain Names Specification RFC.
